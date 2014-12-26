@@ -2,7 +2,8 @@ Rails.application.routes.draw do
   mount Dashing::Engine, at: Dashing.config.engine_path
   root "pages#home"
   get "about" => "pages#about"  #creates about_path
-  get "road" => "pages#road"  #creates road_path
+  get "sample" => "dashboards#sample"  #creates road_path
+  get "road" => "pages#road"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
