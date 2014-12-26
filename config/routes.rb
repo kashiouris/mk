@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  mount Dashing::Engine, at: Dashing.config.engine_path
   root "pages#home"
   get "about" => "pages#about"  #creates about_path
   get "road" => "pages#road"  #creates road_path
