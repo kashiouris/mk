@@ -44,7 +44,7 @@ html {
 body {
   margin: 0;
   background-color: $background-color;
-  font-size: 20px;
+  font-size: 10px;
   color: $text-color;
   font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -95,16 +95,16 @@ h1 {
   margin-bottom: 12px;
   text-align: center;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 100;
 }
 h2 {
   text-transform: uppercase;
-  font-size: 76px;
+  font-size: 16px;
   font-weight: 700;
   color: $text-color;
 }
 h3 {
-  font-size: 25px;
+  font-size: 5px;
   font-weight: 600;
   color: $text-color;
 }
@@ -113,19 +113,19 @@ h3 {
 // Base widget styles
 // ----------------------------------------------------------------------------
 .gridster {
-  margin: 0px auto;
+  margin: 2px auto;
 }
 
 .icon-background {
-  width: 100%!important;
-  height: 100%;
+  width: 30%;
+  height: 30%;
   position: absolute;
   left: 0;
   top: 0;
   opacity: 0.1;
-  font-size: 275px;
+  font-size: 15px;
   text-align: center;
-  margin-top: 82px;
+  margin-top: 22px;
 }
 
 .list-nostyle {
@@ -137,7 +137,7 @@ h3 {
 }
 
 .gs_w {
-  width: 100%;
+  width: 20%;
   display: table;
   cursor: pointer;
 }
@@ -145,7 +145,7 @@ h3 {
 .widget {
   padding: 25px 12px;
   text-align: center;
-  width: 100%;
+  width: 20%;
   display: table-cell;
   vertical-align: middle;
 }
@@ -216,12 +216,12 @@ h3 {
 #saving-instructions {
   display: none;
   padding: 10px;
-  width: 500px;
-  height: 122px;
+  width: 40px;
+  height: 40px;
   z-index: 1000;
   background: white;
-  top: 100px;
-  color: black;
+  top: 20px;
+  color: red;
   font-size: 15px;
   padding-bottom: 4px;
 

@@ -1,28 +1,97 @@
-<% content_for :title do %>
-  My super sweet dashboard
-<% end %>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ROAD</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
 
-<div class="gridster">
-  <ul>
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
-    </li>
+<<div class="container-fluid">
 
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="synergy" data-view="Meter" data-title="Synergy" data-min="0" data-max="100"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
-      <div data-id="buzzwords" data-view="List" data-unordered="true" data-title="Buzzwords" data-moreinfo="# of times said around the office"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="valuation" data-view="Number" data-title="Current Valuation" data-moreinfo="In billions" data-prefix="$"></div>
-    </li>
-
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
-    </li>
-  </ul>
-  <center><div style="font-size: 12px">Try this: curl -X PUT 'http://<%= request.host %>:<%= request.port %>/dashing/widgets/welcome' -d "widget[text]=Dashing is awesome"</div></center>
+<div class="row" style="background-color: #848484;box-shadow: >
+  <div class="col-md-1"  </div>
+  <div class="col-md-2">.neuro1</div>
+  <div class="col-md-2">.cardiac1</div>
+  <div class="col-md-2">.pulm1</div>
+  <div class="col-md-1">.gi1</div>
+  <div class="col-md-2">.renal1</div>
+  <div class="col-md-2">.heme1-</div>
+  
 </div>
+<div class="row">
+  <div class="col-md-1">.id2</div>
+  <div class="col-md-2">.neuro2</div>
+  <div class="col-md-2">.cardiac2</div>
+  <div class="col-md-2">.pulm2</div>
+  <div class="col-md-1">.gi2</div>
+  <div class="col-md-2">.renal2</div>
+  <div class="col-md-2">.heme2</div>
+</div>
+<div class="row">
+  <div class="col-md-1">.id3</div>
+  <div class="col-md-2">.neuro3</div>
+  <div class="col-md-2">.cardiac3</div>
+  <div class="col-md-2">.pulm3</div>
+  <div class="col-md-1">.gi3</div>
+  <div class="col-md-2">.renal3</div>
+  <div class="col-md-2">.heme3</div>
+</div>
+  
+<div class="row">
+
+      <div class="col-md-1" style="background-color: #dedef8;box-shadow: 
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         <h4>First Column</h4>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+
+      <div class="col-md-1" style="background-color: #dedef8;box-shadow: 
+         inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         <h4>Second Column- Split into 4 boxes</h4>
+         <div class="row">
+            <div class="col-sm-1" style="background-color: #B18904;
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+               <p>Consectetur art party Tonx culpa semiotics. Pinterest 
+                  assumenda minim organic quis.
+               </p>
+            </div>
+            <div class="col-md-6" style="background-color: #B18904;
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+               <p> sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+                  ullamco laboris nisi ut aliquip ex ea commodo consequat.
+               </p>
+            </div>
+         </div>
+
+         <div class="row">
+            <div class="col-md-6" style="background-color: #B18904;
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+               <p>quis nostrud exercitation ullamco laboris nisi ut 
+                  aliquip ex ea commodo consequat.
+               </p>
+            </div>   
+            <div class="col-md-6" style="background-color: #B18904;
+               box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna 
+                  aliqua. Ut enim ad minim.</p>
+            </div>
+         </div>
+
+      </div>
+
+   </div>
+
+</div>
+
+
+ <div class="container">
+    <%= yield %>
+</div>
+
+</body>
+</html>
